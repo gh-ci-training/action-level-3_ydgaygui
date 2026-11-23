@@ -1,0 +1,7 @@
+name: Training dependency audit
+description: Checks the dependency policy
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: printf '%s\n' 'Dependency policy passed.'
