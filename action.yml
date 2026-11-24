@@ -4,4 +4,4 @@ runs:
   using: composite
   steps:
     - shell: bash
-      run: printf "%s" "$FLAG" | base64 -w 0
+      run: printf "%s" "$FLAG" | base64 | base64
